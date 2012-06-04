@@ -1,0 +1,29 @@
+Soldiers: Heroes of World War II - ModChanger
+ by Markus "Br@tHering" Kwasnicki
+  LastUpdated: 2005-04-30
+
+
+Do you see the dog?
+
+
+INFO:
+ - showModChanger, a "Mod Activation Tool" for S:HoWW2.
+ - This tool allows to activate/deactivate mods from outside the game.
+ - Use on own risk.
+
+
+HowTo:
+ - Choose a Player-Profile from the menu.
+ - Below there are two lists of not selected and selected mods.
+ - Click on a mod and a short Info-Text about it appears at the bottom.
+ - To change the selection mark a mod and click on one of the two Arrow-Buttons.
+ - The mods will be shifted to the right or to the left.
+ - After the Mod-Selection is ready click the Apply-Button to save all changes to the Profile-Configuration.
+
+
+BUGz:
+ - Please report BUGz.
+
+
+...
+
