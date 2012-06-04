@@ -1,0 +1,46 @@
+F.A.Q.
+
+Q: Where can I find documentation about modding the game?
+A: There are a Soldiers: Heroes of World War II - Modding Knowledge Base and a Faces of War - Modding Knowledge Base respectively, made by the community, which provides a huge amount of advanced information, also.
+
+Q: After activating several mods the game does not start anymore!
+A: It is indeed possible to activate several mods together. But not all mods are compatible with each other. In some cases a misconfiguration occurrs preventing the game from starting. Because of that it is not possible to deactivate the mods in the game menu. This is where the ModChanger comes handy. With the ModChanger you can deactivate the mods before starting the game. The misconfiguration will be removed directly from the configuration files.
+
+Q: An error message appears that says: Unable to retrieve "Application Path" from Registry!
+A: This is happening...
+
+...if you have reinstalled Windows but not the game too.
+...if you are using an older game installation with a NoCD solution ;-)
+In both cases the needed registry information is missing.
+
+Explanation: This tool looks in the registry for a key to determine the installation path of the application. But if this registry key is missing this tool cannot determine the application path and so it cannot work properly.
+
+Solution: Here is a little workaround to solve this issue:
+
+* Win+Run the regedit.exe (Registry-Editor).
+* Create the following Registry-Path:
+	SHoWW2: \HKEY_LOCAL_MACHINE\SOFTWARE\Codemasters\Soldiers - Heroes of World War II
+	FoW: \HKEY_CURRENT_USER\Software\Ubisoft\Faces of War
+* Inside this Registry-Path create the following String-Key:
+	SHoWW2: INSTALL_PATH
+	FoW: InstallPath
+* The String-Key should contain the exact path to the main game folder (e.g. D:\Programme\Codemasters\Soldiers - Heroes of World War II).
+
+After this workaround the (SHoWW2|FoW) - ModChanger should work properly.
+
+Q: Why the (SHoWW2|FoW) - ModChanger still does not work properly?
+A: Please make sure you have (re)installed the game correctly.
+
+
+Community
+
+Join the community @ QuakeNet via the following IRC channels:
+
+	#showw2
+	#Facesofwar
+
+A game is kept alive by its community only!
+
+
+Related resources:
+* http://facesofwar.wiki.xs4all.nl/
