@@ -1,0 +1,80 @@
+﻿'' '''Nachfolgend werden die ersten nötigen Schritte erläutert, um mit dem Erstellen von Mods beginnen zu können:''' ''
+
+
+'''1.)''' Das Spiel muss auf die Version 1.28.3E aktualisiert werden. 
+
+Dies kann direkt erfolgen, es muss nicht zuerst auf die Version 1.12.2 aktualisiert werden. 
+
+Allerdings enthält diese erste Aktualisierung einige zusätzliche Informationen das Spiel betreffend. 
+
+
+Upgrade Version 1.12.2 Multi-Lingual Upgrade - 38.5mb - 05.07.04: ftp://downloads.codemasters.com/upgrade/soldiers_euro_upgrade_v1.12.2.zip
+
+Soldiers: Heroes of WWII MP Combat Upgrade (1.28.3E) - 160 Mb - 04.11.04: http://www.codemasters.de/downloads/?getdownload=17306 (Bitte einen Mirror wählen!)
+
+
+'''2.)''' Es muss ein neues Verzeichnis angelegt werden, welches als Referenz für alle zu erstellenden Mods dienen wird. 
+
+In dieses werden alle grundlegenden Dateien des Spiels extrahiert (dazu ist ein Programm wie z.B. [http://www.7-zip.org/ 7-Zip], PowerArchiver, WinZip bzw. WinRAR nötig).
+
+Folgende Schritte sind in genau der vorgegebenen Reihenfolge dazu notwendig: 
+
+
+'''2. a)''' Ein Verzeichnis als Referenz anlegen (z.B. ''C:\SoldiersFiles''). 
+
+'''2. b)''' Der gesamte Inhalt aus der Datei '''[IhrSoldiersInstallationsVerzeichnis]\game.pak''' muss in das Referenzverzeichnis extrahiert werden (in unserem Beispiel ''C:\SoldiersFiles''). 
+
+'''2. c)''' Der gesamte Inhalt aus der Datei '''[IhrSoldiersInstallationsVerzeichnis]\resource\Patch\1.pat''' muss in das Referenzverzeichnis extrahiert werden (in unserem Beispiel ''C:\SoldiersFiles''). 
+Bereits vorhandene Dateien müssen überschrieben werden!
+
+'''2. d)''' Der gesamte Inhalt aus der Datei '''[IhrSoldiersInstallationsVerzeichnis]\resource\Patch\2.pat''' muss in das Referenzverzeichnis extrahiert werden (in unserem Beispiel ''C:\SoldiersFiles''). 
+Bereits vorhandene Dateien müssen überschrieben werden!
+
+'''2. e)''' Der gesamte Inhalt aus der Datei '''[IhrSoldiersInstallationsVerzeichnis]\expansion.pak''' muss in das Referenzverzeichnis extrahiert werden (in unserem Beispiel ''C:\SoldiersFiles''). 
+Bereits vorhandene Dateien müssen überschrieben werden!
+
+'''2. f)''' Der gesamte Inhalt aus der Datei '''[IhrSoldiersInstallationsVerzeichnis]\resource\Patch\3.pat''' muss in das Referenzverzeichnis extrahiert werden (in unserem Beispiel ''C:\SoldiersFiles''). 
+Bereits vorhandene Dateien müssen überschrieben werden!
+
+
+Von nun an werden die ''*.pak'' bzw. ''*.pat'' Dateien nicht mehr angerührt. 
+
+Alle Dateien des gesamten Spiels sind jetzt in dem Referenzverzeichnis enthalten. 
+
+Dies sind die benötigten Dateien, mit denen gearbeitet werden soll. 
+
+
+'''3.)''' Jetzt muss ein weiteres Verzeichnis ''mods'' für die Mods unter '''[IhrSoldiersInstallationsVerzeichnis]\mods''' angelegt werden (falls nicht bereits vorhanden). 
+
+
+'''4.)''' Innerhalb dieses Verzeichnisses muss nun je ein Verzeichnis für die Mods unter '''[IhrSoldiersInstallationsVerzeichnis]\mods\[IhrModName]''' mit dem Namen des Mods angelegt werden.
+
+
+'''5.)''' Innerhalb eines jeden Mod Verzeichnisses muss eine Datei '''[IhrSoldiersInstallationsVerzeichnis]\mods\[IhrModName]\info.mod''' erstellt werden. 
+
+Diese muss folgendes enthalten:
+
+ {mod
+     {name "'''IhrModName'''"}
+     {desc "'''IhreModBeschreibung'''"}
+     {version "'''IhreModVersion'''"}
+ }
+
+Der hervorgehobene Inhalt muss entsprechend angepasst werden.
+
+
+'''6.)''' Ebenfalls innerhalb eines jeden Mod Verzeichnisses muss ein Verzeichnis '''[IhrSoldiersInstallationsVerzeichnis]\mods\[IhrModName]\resource''' erstellt werden. 
+
+In diesem Verzeichnis werden alle ''modifizierten'' Dateien aus dem Referenzverzeichnis in genau der gleichen Verzeichnisstruktur abgelegt. 
+
+''(Das gesamte Spiel basiert auf simplen Text-Dateien, welche Objekte und all deren Eigenschaften und Werte enthalten, etc.)''
+
+
+'''7.)''' Sobald ein Mod zum testen fertiggestellt wurde, muss dieser im ''MODS'' Menü des Spiels aktiviert werden (alternativ können andere Tools wie der ''[[ModChanger]]'' von ''[[User:BratHering|BratHering]]'' bzw. der ''[[ModSwitcher]]'' von ''Rancid'' dazu verwendet werden).
+
+
+----
+
+[[How To Start Modding (english)]]
+
+[[Category:Modding Outfront]]

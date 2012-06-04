@@ -1,0 +1,80 @@
+﻿'' '''In the following first steps needed will be described, in order to be able to begin with the creating of Mods:''' ''
+
+
+'''1.)''' The game needs to be updated to the 1.28.3E version first.
+
+This can be done directly, there is no need to update to the 1.12.2 version first.
+
+But the first update contains some additional information related to the game.
+
+
+Upgrade Version 1.12.2 Multi-Lingual Upgrade - 38.5mb - 05.07.04: ftp://downloads.codemasters.com/upgrade/soldiers_euro_upgrade_v1.12.2.zip
+
+Soldiers: Heroes of WWII MP Combat Upgrade (1.28.3E) - 160 Mb - 04.11.04: http://www.codemasters.de/downloads/?getdownload=17306 (Choose a mirror please!)
+
+
+'''2.)''' A new folder must be created, which will serve as the reference folder for all new Mods.
+
+Into this folder all basic files of the game will be extracted (to do so such programs like [http://www.7-zip.org/ 7-Zip], PowerArchiver, WinZip or WinRAR are needed).
+
+The following steps are needed in the order that they are given below:
+
+
+'''2. a)''' Create a new folder for reference (e.g. ''C:\SoldiersFiles'').
+
+'''2. b)''' The entire content from the file '''[YourSoldiersInstallationFolder]\game.pak''' must be extracted into the reference folder (in our example ''C:\SoldiersFiles'').
+
+'''2. c)''' The entire content from the file '''[YourSoldiersInstallationFolder]\resource\Patch\1.pat''' must be extracted into the reference folder (in our example ''C:\SoldiersFiles''). 
+Files which already exist must be overwritten!
+
+'''2. d)''' The entire content from the file '''[YourSoldiersInstallationFolder]\resource\Patch\2.pat''' must be extracted into the reference folder (in our example ''C:\SoldiersFiles''). 
+Files which already exist must be overwritten!
+
+'''2. e)''' The entire content from the file '''[YourSoldiersInstallationFolder]\expansion.pak''' must be extracted into the reference folder (in our example ''C:\SoldiersFiles'').
+Files which already exist must be overwritten!
+
+'''2. f)''' The entire content from the file '''[YourSoldiersInstallationFolder]\resource\Patch\3.pat''' must be extracted into the reference folder (in our example ''C:\SoldiersFiles'').
+Files which already exist must be overwritten!
+
+
+From now on no ''*.pak'' or ''*.pat'' files will not be touched any longer.
+
+All the files from the entire game are now stored in the reference folder.
+
+This are the required files, for working with.
+
+
+'''3.)''' Now a new folder ''mods'' under '''[YourSoldiersInstallationFolder]\mods''' for all the Mods must be created (if it does not already exist).
+
+
+'''4.)''' Within this folder now one new folder for each Mod under '''[YourSoldiersInstallationFolder]\mods\[YourModName]''' with the name of the Mod must be created.
+
+
+'''5.)''' Within each Mod folder a file '''[YourSoldiersInstallationFolder]\mods\[YourModName]\info.mod''' must be created.
+
+This file must contain the following:
+
+ {mod
+     {name "'''YourModName'''"}
+     {desc "'''YourModDescription'''"}
+     {version "'''YourModVersion'''"}
+ }
+
+The highlighted contents must be adapted accordingly.
+
+
+'''6.)''' Likewise within each Mod folder a new folder '''[YourSoldiersInstallationFolder]\mods\[YourModName]\resource''' must be created.
+
+In this folder all ''modified'' files from the reference folder will be stored in exactly the same folder structure.
+
+''(The whole game is based on ordinary text files which contains object information with their attributes and values, etc.)''
+
+
+'''7.)''' As soon as a Mod is finished for testing, it must be activated in the ''MODS'' menu of the game (alternatively such Tools like the ''[[ModChanger]]'' by ''[[User:BratHering|BratHering]]'' or the ''[[ModSwitcher]]'' by ''Rancid'' can be used).
+
+
+----
+
+[[How To Start Modding (german)]]
+
+[[Category:Modding Outfront]]
